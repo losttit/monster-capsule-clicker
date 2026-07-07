@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Амнямеры</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Амнямеры</h1>
+    <div class="user-bar">
+      <span class="user-label">Пользователь: <strong id="user-display">Гость</strong></span>
+      <button class="reset-btn hidden" id="reset-btn" type="button">Сбросить прогресс</button>
+      <button class="logout-btn hidden" id="logout-btn" type="button">Выйти</button>
+    </div>
+    <button class="theme-toggle-btn" id="theme-toggle-btn" type="button">Светлая тема</button>
+    <div class="stats">
+      <div class="stat">
+        Монеты
+        <strong>💰 <span id="coins">0</span></strong>
+      </div>
+      <div class="stat">
+        В секунду
+        <strong>⏱️ <span id="income">0</span></strong>
+      </div>
+      <div class="stat">
+        За клик
+        <strong>👆 <span id="click-power">1</span></strong>
+      </div>
+    </div>
+    <button class="clicker" id="clicker">
+      <img src="/src/assets/images/candy.png" alt="Candy" class="clicker-icon" />
+    </button>
+
+    <div class="action-row">
+      <button class="action-btn" id="open-capsule-btn">Открыть капсулу</button>
+      <button class="action-btn" id="inventory-btn">Инвентарь</button>
+      <button class="action-btn" id="collection-btn">Коллекция</button>
+    </div>
+
+    <div class="upgrades">
+      <button class="upgrade-btn" id="click-upgrade">
+        <div class="upgrade-title">Улучшить клик</div>
+        <div>+1 монета за клик</div>
+        <div class="upgrade-subtitle">Стоимость: <span id="click-upgrade-cost">10</span></div>
+      </button>
+      <button class="upgrade-btn" id="auto-upgrade">
+        <div class="upgrade-title">Авто-доход</div>
+        <div>+1 монета в секунду</div>
+        <div class="upgrade-subtitle">Стоимость: <span id="auto-upgrade-cost">25</span></div>
+      </button>
+    </div>
+  </div>
+
+  <div id="capsule-modal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <div class="modal-title">Открытие капсулы</div>
+      <div id="capsule-animation" class="capsule-animation">
+        <div class="capsule-shell"></div>
+        <div class="capsule-glow"></div>
+        <div class="monster-reveal" id="monster-reveal">?</div>
+      </div>
+      <div id="capsule-scroll" class="capsule-scroll hidden">
+        <div class="capsule-scroll-overlay"></div>
+        <div id="capsule-scroll-track" class="capsule-scroll-track"></div>
+      </div>
+      <div id="monster-details" class="monster-details">Готово к раскрытию.</div>
+      <div id="capsule-collection-action" class="modal-collection-action"></div>
+      <button class="modal-close" id="capsule-close">Закрыть</button>
+    </div>
+  </div>
+
+  <div id="inventory-modal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card inventory-card">
+      <div class="modal-title">Инвентарь</div>
+      <div id="inventory-list" class="inventory-list">Пусто</div>
+      <button class="modal-close" id="inventory-close">Закрыть</button>
+    </div>
+  </div>
+
+  <div id="collection-modal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card collection-card">
+      <div class="modal-title">Коллекция</div>
+      <div id="collection-status" class="collection-status">Собрано 0 / 10</div>
+      <div id="collection-grid" class="collection-grid"></div>
+      <button class="modal-close" id="collection-close">Закрыть</button>
+    </div>
+  </div>
+
+  <div id="login-modal" class="modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <div class="modal-title">Вход</div>
+      <input id="login-name" class="login-input" type="text" placeholder="Введите логин" />
+      <button class="action-btn" id="login-btn" type="button">Войти</button>
+      <p class="login-note">Прогресс сохраняется локально для этого логина.</p>
+    </div>
+  </div>
+  
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
