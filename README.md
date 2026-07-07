@@ -61,17 +61,17 @@ npm run preview
 
 ## Скриншоты
 ### Вход
-![Вход](src\assets\images\readme\a1.jpg)
+![Вход](src/assets/images/readme/a1.jpg)
 ### Светлая/тёмная тема
-![Светлая тема](src\assets\images\readme\a2.jpg)
-![Тёмная тема](src\assets\images\readme\a3.jpg)
+![Светлая тема](src/assets/images/readme/a2.jpg)
+![Тёмная тема](src/assets/images/readme/a3.jpg)
 ### Капсула стоит 150 монет, при отсутсвии выводит соответсвующее сообщение
-![Не хватает монет](src\assets\images\readme\a6.jpg)
+![Не хватает монет](src/assets/images/readme/a6.jpg)
 ### Открытие капсулы
-![Открытие капсулы](src\assets\images\readme\a4.jpg)
-![Капсула открыта1](src\assets\images\readme\a5.jpg)
-![Капсула открыта2](src\assets\images\readme\a7.jpg)
+![Открытие капсулы](src/assets/images/readme/a4.jpg)
+![Капсула открыта1](src/assets/images/readme/a5.jpg)
+![Капсула открыта2](src/assets/images/readme/a7.jpg)
 ### Инвентарь и добавление в коллекцию
-![Инвентарь](src\assets\images\readme\a8.jpg)
-![Пустая коллекция](src\assets\images\readme\a9.jpg)
-![Один элемент в коллекции](src\assets\images\readme\a10.jpg)
+![Инвентарь](src/assets/images/readme/a8.jpg)
+![Пустая коллекция](src/assets/images/readme/a9.jpg)
+![Один элемент в коллекции](src/assets/images/readme/a10.jpg)
